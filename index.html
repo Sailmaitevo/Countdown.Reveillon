@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"/>
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet"> 
+		<style>
+			html, body{
+				height: 100%;
+			}
+			.countdown-inner {
+				border: 1px solid #dee2e6;
+				border-radius: .5rem;
+				display: inline-block;
+				padding: .25rem 1rem;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			.caption{
+				font-size: 1.25rem;
+				font-weight: 300;
+				display: block;
+				width: 100%;
+				text-align: center;
+			}
+			.separator{
+				font-size: 3.5rem;
+				font-weight: 500;
+				font-family: monospace;
+				align-self: center;
+			}
+			.countdown-number{
+				font-size: calc(1.575rem + 3.9vw);
+    			font-weight: 300;
+    			line-height: 1.2;
+				font-family: 'Roboto Mono', monospace;
+			}
+		</style>
+		<title>Olá, Mundo JS</title>
+	</head>
+	<body class="d-flex justify-content-center align-items center">
+		<div class="countdown d-flex justify-content-center align-items-center">
+			<div class="countdown-inner">
+				<span class="countdown-number" data-js-digit-index="0" data-js-number="days"></span>
+				<span class="countdown-number" data-js-digit-index="1" data-js-number="days"></span>
+				<span class="countdown-number" data-js-digit-index="2" data-js-number="days"></span>
+				<span class="caption">Dias</span>
+			</div>
+			<span class="separator">:</span>
+			<div class="countdown-inner">
+				<span class="countdown-number" data-js-digit-index="0" data-js-number="hours"></span>
+				<span class="countdown-number" data-js-digit-index="1" data-js-number="hours"></span>
+				<span class="caption">Horas</span>
+			</div>
+			<span class="separator">:</span>
+			<div class="countdown-inner">
+				<span class="countdown-number" data-js-digit-index="0" data-js-number="minutes"></span>
+				<span class="countdown-number" data-js-digit-index="1" data-js-number="minutes"></span>
+				<span class="caption">Minutos</span>
+			</div>
+			<span class="separator">:</span>
+			<div class="countdown-inner">
+				<span class="countdown-number" data-js-digit-index="0" data-js-number="seconds"></span>
+				<span class="countdown-number" data-js-digit-index="1" data-js-number="seconds"></span>
+				<span class="caption">Segundos</span>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="control.js"></script>
